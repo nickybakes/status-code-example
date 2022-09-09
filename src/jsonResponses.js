@@ -9,7 +9,7 @@ const success = (request, response) => {
     message: 'This is a successful response',
   };
 
-  respondJSON(request, response, 200, responseJSON);
+  return respondJSON(request, response, 200, responseJSON);
 };
 
 const badRequest = (request, response, params) => {
